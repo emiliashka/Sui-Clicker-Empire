@@ -111,4 +111,27 @@ module clicker_contracts::game {
             amount,
         });
     }
+
+    /// Apply an upgrade to a player (called by upgrades module)
+    public fun apply_upgrade(
+        player: &mut Player,
+        cost: u64,
+        multiplier_boost: u64,
+    ) {
+        assert!(player.energy >= cost, 100);
+
+        player.energy = player.energy - cost;
+        player.multiplier = player.multiplier + multiplier_boost;
+    }
+
+    /// Read-only: get player owner
+    public fun player_owner(player: &Player): address {
+        player.owner
+    }
+
+    /// Read-only: get player multiplier
+    public fun player_multiplier(player: &Player): u64 {
+        player.multiplier
+    }
+
 }
