@@ -6,7 +6,7 @@ Players register, click to generate energy, buy upgrades, and claim rewards — 
 
 ---
 
-## 🧠 Core Concepts
+##  Core Concepts
 
 ### Player
 - Owned object
@@ -27,7 +27,7 @@ Players register, click to generate energy, buy upgrades, and claim rewards — 
 
 ---
 
-## 🧩 Modules
+##  Modules
 
 ### `game.move`
 Handles:
