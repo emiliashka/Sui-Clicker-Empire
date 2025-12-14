@@ -6,21 +6,6 @@ Players register, click to generate energy, buy upgrades, and claim rewards — 
 
 ---
 
-## Repository Structure
-
-clicker_contracts/
-├── Move.toml
-├── Move.lock
-├── sources/
-│ ├── game.move # Core game logic (Player, clicks, rewards)
-│ ├── upgrades.move # Upgrade logic (multipliers)
-│ └── events.move # On-chain events for indexing
-└── tests/
-└── clicker_contracts_tests.move
-
-
----
-
 ## 🧠 Core Concepts
 
 ### Player
